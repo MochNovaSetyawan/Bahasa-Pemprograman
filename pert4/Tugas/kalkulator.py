@@ -19,6 +19,7 @@ def tampilan_info():
 
 def main():
     while True:
+        tampilan_info()
         pilihan = input("Pilih operasi (1/2/3/4/5): ")
 
         if pilihan in ('1', '2', '3', '4'):

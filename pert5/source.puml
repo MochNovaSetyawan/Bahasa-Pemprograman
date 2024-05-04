@@ -1,0 +1,17 @@
+@startuml Source
+
+title Alur Program Kalkulator
+start
+: Display Menu;
+
+if (Pilihan "1") then 
+    : x + y;
+    else if (Pilihan "2") then
+    : x - y
+    else if (Pilihan "3") then
+    : x * y
+    else if (Pilihan "4") then
+    if (y == 0) then
+    : "Error: Pembagian dengan nol"
+
+stop

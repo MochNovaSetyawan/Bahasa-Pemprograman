@@ -5,11 +5,9 @@ while (true)
     :Meminta pengguna memilih minuman (Teh/Kopi);
     if (pilihan == "teh") then (Teh)
         :Tampilkan menu Teh;
-        :Set menu menjadi menu aneka teh;
         break
     elseif (pilihan == "kopi") then (Kopi)
         :Tampilkan menu Kopi;
-        :Set menu menjadi menu aneka kopi;
         break
     else (Pilihan tidak valid)
         :Tampilkan "Pilihan tidak valid. Silakan pilih antara 'Teh' atau 'Kopi';";

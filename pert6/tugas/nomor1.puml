@@ -5,25 +5,23 @@ while (true)
     :Meminta pengguna memilih minuman (Teh/Kopi);
     if (pilihan == "teh") then (Teh)
         :Tampilkan menu Teh;
-        :Set menu dipilih menjadi menu aneka teh;
+        :Set menu menjadi menu aneka teh;
         break
     elseif (pilihan == "kopi") then (Kopi)
         :Tampilkan menu Kopi;
-        :Set menu dipilih menjadi menu aneka kopi;
+        :Set menu menjadi menu aneka kopi;
         break
     else (Pilihan tidak valid)
         :Tampilkan "Pilihan tidak valid. Silakan pilih antara 'Teh' atau 'Kopi';";
     endif
 endwhile
 
-:Tentukan loop pemilihan item;
 while (true)
     :Input pilihan nomor menu atau 0 untuk selesai;
     if (Pilihan nomor = 0) then (yes)
         :Keluar loop;
     else (no)
         if (Nomor valid) then (yes)
-            :Dapatkan nama item dari menu;
             :Input jumlah item yang diinginkan;
             :Hitung dan tambahkan ke total harga;
         else (no)

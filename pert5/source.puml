@@ -7,11 +7,11 @@ start
 if (Pilihan "1") then 
     : x + y;
     else if (Pilihan "2") then
-    : x - y
+    : x - y;
     else if (Pilihan "3") then
-    : x * y
+    : x * y;
     else if (Pilihan "4") then
     if (y == 0) then
-    : "Error: Pembagian dengan nol"
+    : "Error: Pembagian dengan nol";
 
 stop

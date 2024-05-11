@@ -2,7 +2,7 @@ def tampilkan_menu(menu):
     for index, item in enumerate(menu):
         print(f"{index+1}. {item} - Rp{menu[item]}")
 
-def main():
+def definisi_menu():
     menu_teh = {
         'Teh Hitam': 5000,
         'Teh Hijau': 6000,
@@ -13,6 +13,10 @@ def main():
         'Kopi Latte': 15000,
         'Kopi Susu': 10000,
     }
+    return menu_teh, menu_kopi
+
+def main():
+    menu_teh, menu_kopi = definisi_menu()
 
     while True:
         pilihan = input("Pilih minuman Anda (Teh/Kopi): ").lower()
@@ -43,7 +47,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-

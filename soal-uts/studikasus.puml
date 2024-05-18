@@ -1,4 +1,44 @@
-@startuml nova
+@startuml kasus
+start
+
+:Menampilkan informasi operasi;
+:Menampilkan "Pilih operasi 1/2/3/4/5:";
+:Meminta masukan pilihan;
+
+while (Pilihan bukan 5) 
+    :Jika pilihan 1-4;
+    if (Pilihan == 1) then (ya)
+        :Meminta masukan angka pertama;
+        :Meminta masukan angka kedua;
+        :Hasil = tambah(angka1, angka2);
+    else if (Pilihan == 2) then (ya)
+        :Meminta masukan angka pertama;
+        :Meminta masukan angka kedua;
+        :Hasil = kurang(angka1, angka2);
+    else if (Pilihan == 3) then (ya)
+        :Meminta masukan angka pertama;
+        :Meminta masukan angka kedua;
+        :Hasil = kali(angka1, angka2);
+    else if (Pilihan == 4) then (ya)
+        :Meminta masukan angka pertama;
+        :Meminta masukan angka kedua;
+        if (angka2 == 0) then (ya)
+            :Menampilkan "Error: Pembagian dengan nol";
+            :Hasil = 0;
+        else (tidak)
+            :Hasil = bagi(angka1, angka2);
+        endif
+    else (tidak)
+        :Menampilkan "Pilihan tidak valid!";
+    endif
+    :Menampilkan Hasil;
+    
+    :Menampilkan informasi operasi;
+    :Menampilkan "Pilih operasi 1/2/3/4/5:";
+    :Meminta masukan pilihan;
 
 
+:Menampilkan "Keluar dari program...";
+
+stop
 @enduml

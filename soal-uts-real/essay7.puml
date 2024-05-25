@@ -1,0 +1,35 @@
+@startuml
+start
+:Menampilkan Menu;
+:Meminta Pilihan Operasi;
+
+if (Pilihan Operasi == 1) then (ya)
+  :Tambah;
+  :Masukkan bilangan pertama;
+  :Masukkan bilangan kedua;
+  :Tampilkan Hasil Tambah;
+elseif (Pilihan Operasi == 2) then (ya)
+  :Kurang;
+  :Masukkan bilangan pertama;
+  :Masukkan bilangan kedua;
+  :Tampilkan Hasil Kurang;
+elseif (Pilihan Operasi == 3) then (ya)
+  :Kali;
+    :Masukkan bilangan pertama;
+    :Masukkan bilangan kedua;
+  :Tampilkan Hasil Kali;
+elseif (Pilihan Operasi == 4) then (ya)
+  if (y != 0) then (ya)
+    :Bagi;
+    :Masukkan bilangan pertama;
+    :Masukkan bilangan kedua;
+    :Tampilkan Hasil Bagi;
+  else (tidak)
+    :Tampilkan Error "Pembagian dengan nol tidak diperbolehkan";
+  endif
+else (tidak)
+  :Tampilkan "Pilihan tidak valid";
+endif
+
+stop
+@enduml

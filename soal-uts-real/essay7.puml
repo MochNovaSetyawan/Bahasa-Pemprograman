@@ -15,17 +15,17 @@ elseif (Pilihan Operasi == 2) then (ya)
   :Tampilkan Hasil Kurang;
 elseif (Pilihan Operasi == 3) then (ya)
   :Kali;
-    :Masukkan bilangan pertama;
-    :Masukkan bilangan kedua;
+  :Masukkan bilangan pertama;
+  :Masukkan bilangan kedua;
   :Tampilkan Hasil Kali;
 elseif (Pilihan Operasi == 4) then (ya)
   if (y != 0) then (ya)
-    :Bagi;
-    :Masukkan bilangan pertama;
-    :Masukkan bilangan kedua;
-    :Tampilkan Hasil Bagi;
+  :Bagi;
+  :Masukkan bilangan pertama;
+  :Masukkan bilangan kedua;
+  :Tampilkan Hasil Bagi;
   else (tidak)
-    :Tampilkan Error "Pembagian dengan nol tidak diperbolehkan";
+  :Tampilkan Error "Pembagian dengan nol tidak diperbolehkan";
   endif
 else (tidak)
   :Tampilkan "Pilihan tidak valid";
